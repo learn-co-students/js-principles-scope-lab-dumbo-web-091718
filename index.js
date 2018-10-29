@@ -3,15 +3,15 @@ var customerName = "bob"
 const leastFavoriteCustomer = "lee"
 
 function upperCaseCustomerName() {
-  customerName = "BOB"
+  customerName = customerName.toUpperCase()
 }
 
 function setBestCustomer() {
-  bestCustomer = "not bob"
+  bestCustomer = `not ${customerName}`
 }
 
 function overwriteBestCustomer() {
-  bestCustomer = "maybe bob"
+  bestCustomer = `maybe ${customerName}`
 }
 
 function changeLeastFavoriteCustomer() {
